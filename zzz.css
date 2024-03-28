@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(58, 129, 0);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.score {
+    font-size: 4em;
+    margin-bottom: .5em;
+}
+
+.board {
+    height: 600px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 80px;
+}
+
+.hole {
+    background-color: rgb(165, 85, 11);
+    border-radius: 60%; /* Adjusted border-radius to make the holes larger */
+    box-shadow: inset 0 10px 0 7px rgb(53, 21, 6),
+                inset 0 25px 25px 15px rgba(0, 0, 0, .3), /* Adjusted box-shadow for larger holes */
+                0 0 5px rgba(0, 0, 0, .5);
+    position: relative;
+    overflow: hidden;
+}
+
+.hole .mole {
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    animation: rise .3s ease-out;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateX(-50%) translateY(100%);
+    }
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.cursor {
+    height: 90px;
+    width: 70px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-image: url('hammer.png');
+    background-size: 100% 100%;
+    transform: translate(-20%, -20%);
+    transition: transform .1s;
+    pointer-events: none;
+}
+
+.cursor.active {
+    transform: translate(-20%, -20%) rotate(-45deg);
+}
+.timer {
+    position: absolute;
+    top: 20px; /* Adjust top position as needed */
+    right: 20px; /* Adjust right position as needed */
+    font-size: 2em; /* Adjust font size as needed */
+}
+.start-button {
+    position: absolute;
+    top: 50%; /* Adjust top position to center vertically */
+    left: 20px; /* Adjust left position as needed */
+    transform: translateY(-50%); /* Center the button vertically */
+    width: 200px; /* Adjust the width of the button */
+    height: 80px; /* Adjust the height of the button */
+    font-size: 1.5em; /* Adjust font size as needed */
+}
