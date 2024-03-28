@@ -126,3 +126,15 @@ window.addEventListener('mousedown', () => {
 window.addEventListener('mouseup', () => {
     cursor.classList.remove('active');
 });
+const customizeButton = document.querySelector('.customize-button');
+
+customizeButton.addEventListener('click', () => {
+    // Open customization interface
+    openCustomizationInterface();
+});
+
+function openCustomizationInterface() {
+    // Implement logic to open the customization interface here
+    // You can display a modal or overlay with input fields for selecting custom images
+    // Allow users to upload images from their local storage and replace the default mole images
+}
