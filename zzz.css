@@ -91,3 +91,12 @@ body {
     height: 80px; /* Adjust the height of the button */
     font-size: 1.5em; /* Adjust font size as needed */
 }
+.customize-button {
+    position: absolute;
+    top: 60%; /* Adjust top position as needed */
+    left: 20px; /* Adjust left position as needed */
+    transform: translateY(-50%); /* Center the button vertically */
+    width: 200px; /* Adjust the width of the button */
+    height: 80px; /* Adjust the height of the button */
+    font-size: 1.5em; /* Adjust font size as needed */
+}
