@@ -91,8 +91,8 @@ body {
 /* Start button styling */
 .customize-button {
     position: absolute;
-    top: 50%;
-    left: 5vw; /* Set left position relative to viewport width */
+    top: 20vw;
+    left: 50%; /* Set left position relative to viewport width */
     transform: translateY(-50%);
     width: 30vw; /* Set width relative to viewport width */
     height: 12vw; /* Set height relative to viewport width */
