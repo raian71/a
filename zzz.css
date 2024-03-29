@@ -91,8 +91,8 @@ body {
 /* Start button styling */
 .customize-button {
     position: absolute;
-    top: 20vw;
-    left: 50%; /* Set left position relative to viewport width */
+    top: 30vw;
+    left: 50vw; /* Set left position relative to viewport width */
     transform: translateY(-50%);
     width: 30vw; /* Set width relative to viewport width */
     height: 12vw; /* Set height relative to viewport width */
@@ -101,7 +101,7 @@ body {
 .start-button {
     position: absolute;
     top: 5vw; /* Set top position relative to viewport width */
-    left: 50%;
+    left: 50vw;
     transform: translateX(-50%);
     width: 30vw; /* Set width relative to viewport width */
     height: 12vw; /* Set height relative to viewport width */
@@ -113,7 +113,7 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
-    height: 50vw; /* Set height relative to viewport width */
+    height: 120vw; /* Set height relative to viewport width */
     width: 80vw; /* Set width relative to viewport width */
     transform: translate(-50%, -50%);
     background-color: white;
@@ -153,7 +153,7 @@ body {
 }
 
 /* Change image button styling */
-.change-image-button, .close-button {
+.change-image-button {
     display: block;
     margin-top: 0.5vw; /* Adjust margin relative to viewport width */
     padding: 0.5vw 1.5vw; /* Adjust padding relative to viewport width */
@@ -165,6 +165,23 @@ body {
     cursor: pointer;
 }
 
-.change-image-button:hover, .close-button:hover {
+.change-image-button:hover {
     background-color: #0056b3;
+}
+/* Close button styling */
+.close-button {
+    position: absolute;
+    top: 1vw; /* Set top position relative to viewport width */
+    right: 1vw; /* Set right position relative to viewport width */
+    padding: 0.5vw 1.5vw; /* Adjust padding relative to viewport width */
+    font-size: 1vw; /* Adjust font size relative to viewport width */
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 2vw; /* Adjust border radius relative to viewport width */
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: #bd2130;
 }
