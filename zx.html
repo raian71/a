@@ -8,22 +8,33 @@
     <title>Whack-a-Mole</title>
 </head>
 <body>
-    <h1 class="score">SCORE: <span>00</span></h1>
-    <div class="board">
-        <div class="hole"></div>
-        <div class="hole"></div>
-        <div class="hole"></div>
-        <div class="hole"></div>
-        <div class="hole"></div>
-        <div class="hole"></div>
-        <div class="hole"></div>
-        <div class="hole"></div>
-        <div class="hole"></div>
+    <div id="password-modal" class="password-modal">
+        <div class="password-modal-content">
+            <h2>Password Required</h2>
+            <input type="password" id="password-input" placeholder="Enter Password">
+            <button id="password-submit">Enter</button>
+            <p id="password-error" class="password-error"></p>
+        </div>
     </div>
-    <button class="start-button">Start Game</button>
-    <button class="customize-button">Customize</button>
-    <div class="timer">Time Left: <span id="countdown">30</span> seconds</div> <!-- Countdown timer -->
-    <div class="cursor"></div>
+
+    <div id="game-content" class="game-content" style="display: none;">
+        <h1 class="score">SCORE: <span>00</span></h1>
+        <div class="board">
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+        </div>
+        <button class="start-button">Start Game</button>
+        <button class="customize-button">Customize</button>
+        <div class="timer">Time Left: <span id="countdown">30</span> seconds</div> <!-- Countdown timer -->
+        <div class="cursor"></div>
+    </div>
 
     <script src="zxc.js"></script>
 </body>
