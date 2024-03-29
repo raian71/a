@@ -89,11 +89,20 @@ body {
 }
 
 /* Start button styling */
-.start-button, .customize-button {
+.customize-button {
     position: absolute;
     top: 50%;
     left: 5vw; /* Set left position relative to viewport width */
     transform: translateY(-50%);
+    width: 30vw; /* Set width relative to viewport width */
+    height: 12vw; /* Set height relative to viewport width */
+    font-size: 2vw; /* Adjust font size relative to viewport width */
+}
+.start-button {
+    position: absolute;
+    top: 5vw; /* Set top position relative to viewport width */
+    left: 50%;
+    transform: translateX(-50%);
     width: 30vw; /* Set width relative to viewport width */
     height: 12vw; /* Set height relative to viewport width */
     font-size: 2vw; /* Adjust font size relative to viewport width */
