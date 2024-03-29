@@ -2,11 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-/* Set height of HTML and body to 100% */
-html, body {
-    height: 100%;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 /* Set font family and background color */
@@ -19,31 +15,30 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    height: 100vh; /* Set height of body to 100% viewport height */
 }
 
 /* Score styling */
 .score {
-    font-size: 4em;
-    margin-bottom: .5em;
+    font-size: 4vw; /* Adjust font size relative to viewport width */
+    margin-bottom: 2vw; /* Adjust margin relative to viewport width */
 }
 
 /* Board styling */
 .board {
-    height: 490px;
-    width: 600px;
+    height: 70vw; /* Set height relative to viewport width */
+    width: 90vw; /* Set width relative to viewport width */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 80px;
+    gap: 10vw; /* Adjust gap relative to viewport width */
 }
 
 /* Hole styling */
 .hole {
     background-color: rgb(165, 85, 11);
-    border-radius: 60%;
-    box-shadow: inset 0 10px 0 7px rgb(53, 21, 6),
-                inset 0 25px 25px 15px rgba(0, 0, 0, .3),
-                0 0 5px rgba(0, 0, 0, .5);
+    border-radius: 50vw; /* Adjust border radius relative to viewport width */
+    box-shadow: inset 0 5vw 0 3.5vw rgb(53, 21, 6), inset 0 12.5vw 12.5vw 7.5vw rgba(0, 0, 0, .3), 0 0 2.5vw rgba(0, 0, 0, .5);
     position: relative;
     overflow: hidden;
 }
@@ -69,11 +64,11 @@ body {
 
 /* Cursor styling */
 .cursor {
-    height: 90px;
-    width: 70px;
+    height: 15vw; /* Set height relative to viewport width */
+    width: 12vw; /* Set width relative to viewport width */
     position: absolute;
-    top: 100px;
-    left: 100px;
+    top: 20vw; /* Set top position relative to viewport width */
+    left: 20vw; /* Set left position relative to viewport width */
     background-image: url('hammer.png');
     background-size: 100% 100%;
     transform: translate(-20%, -20%);
@@ -88,31 +83,20 @@ body {
 /* Timer styling */
 .timer {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 2em;
+    top: 2vw; /* Set top position relative to viewport width */
+    right: 2vw; /* Set right position relative to viewport width */
+    font-size: 2vw; /* Adjust font size relative to viewport width */
 }
 
 /* Start button styling */
-.start-button {
+.start-button, .customize-button {
     position: absolute;
     top: 50%;
-    left: 20px;
+    left: 5vw; /* Set left position relative to viewport width */
     transform: translateY(-50%);
-    width: 200px;
-    height: 80px;
-    font-size: 1.5em;
-}
-
-/* Customize button styling */
-.customize-button {
-    position: absolute;
-    top: 60%;
-    left: 20px;
-    transform: translateY(-50%);
-    width: 200px;
-    height: 80px;
-    font-size: 1.5em;
+    width: 30vw; /* Set width relative to viewport width */
+    height: 12vw; /* Set height relative to viewport width */
+    font-size: 2vw; /* Adjust font size relative to viewport width */
 }
 
 /* Customization container styling */
@@ -120,20 +104,20 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
-    height: 200px;
+    height: 50vw; /* Set height relative to viewport width */
+    width: 80vw; /* Set width relative to viewport width */
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 8px;
+    padding: 2vw; /* Adjust padding relative to viewport width */
     border: 2px solid #ccc;
-    border-radius: 8px;
-    max-width: 20%;
+    border-radius: 2vw; /* Adjust border radius relative to viewport width */
 }
 
 /* Title styling */
 .customization-container h2 {
     text-align: center;
-    margin-bottom: 8px;
-    font-size: 1em;
+    margin-bottom: 1vw; /* Adjust margin relative to viewport width */
+    font-size: 1.5vw; /* Adjust font size relative to viewport width */
 }
 
 /* Mole images container styling */
@@ -146,7 +130,7 @@ body {
 /* Mole container styling */
 .mole-container {
     width: 40%;
-    margin-bottom: 8px;
+    margin-bottom: 1vw; /* Adjust margin relative to viewport width */
     text-align: center;
 }
 
@@ -154,102 +138,24 @@ body {
 .mole-image {
     width: 100%;
     height: auto;
-    max-height: 80px;
+    max-height: 20vw; /* Set max-height relative to viewport width */
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 2vw; /* Adjust border radius relative to viewport width */
 }
 
 /* Change image button styling */
-.change-image-button {
+.change-image-button, .close-button {
     display: block;
-    margin-top: 4px;
-    padding: 2px 6px;
-    font-size: 0.8em;
+    margin-top: 0.5vw; /* Adjust margin relative to viewport width */
+    padding: 0.5vw 1.5vw; /* Adjust padding relative to viewport width */
+    font-size: 1vw; /* Adjust font size relative to viewport width */
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 2vw; /* Adjust border radius relative to viewport width */
     cursor: pointer;
 }
 
-.change-image-button:hover {
+.change-image-button:hover, .close-button:hover {
     background-color: #0056b3;
-}
-
-/* Close button styling */
-.close-button {
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    padding: 2px 6px;
-    font-size: 0.8em;
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.close-button:hover {
-    background-color: #bd2130;
-}
-/* Password modal styling */
-.password-modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px; /* Increase padding for larger modal content */
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    max-width: 300px;
-    text-align: center;
-    font-size: 1.2em; /* Increase font size for larger modal content */
-}
-/* Password input box styling */
-.password-input {
-    width: 100%; /* Set the width to 100% to fill the modal */
-    height: 200px; /* Increase the height of the input box */
-    margin-bottom: 10px; /* Add some space below the input box */
-    font-size: 1.2em; /* Increase font size for larger input box */
-    padding: 5px; /* Add padding for better appearance */
-    box-sizing: border-box; /* Include padding in the width */
-}
-/* Responsive CSS for mobile devices */
-@media only screen and (max-width: 600px) {
-    /* Adjustments for smaller screens */
-    .board {
-        width: 90%;
-        height: auto;
-        gap: 20px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .score {
-        font-size: 2em;
-    }
-
-    .timer {
-        font-size: 1.5em;
-    }
-
-    .start-button,
-    .customize-button {
-        width: 150px;
-        height: 60px;
-        font-size: 1em;
-    }
-
-    .customization-container {
-        max-width: 90%;
-    }
-
-    .password-modal {
-        max-width: 90%;
-    }
-
-    .password-input {
-        height: 100px; /* Adjusted height for input box */
-        font-size: 1em; /* Adjusted font size for input box */
-    }
 }
