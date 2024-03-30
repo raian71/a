@@ -29,7 +29,7 @@ body {
 
 /* Board styling */
 .board {
-    height: 470px;
+    height: 490px;
     width: 600px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -122,19 +122,17 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 2vw; /* Adjust padding relative to viewport width */
+    padding: 8px;
     border: 2px solid #ccc;
-    border-radius: 2vw; /* Adjust border radius relative to viewport width */
-    max-width: 30%; /* Adjust maximum width relative to viewport width */
-    height: 70vh; /* Set height relative to viewport height */
-    overflow: auto; /* Enable scrolling if contents exceed the height */
+    border-radius: 8px;
+    max-width: 20%;
 }
 
 /* Title styling */
 .customization-container h2 {
     text-align: center;
-    margin-bottom: 2%; /* Adjust margin relative to container height */
-    font-size: 2vw; /* Adjust font size relative to viewport width */
+    margin-bottom: 8px;
+    font-size: 1em;
 }
 
 /* Mole images container styling */
@@ -146,8 +144,8 @@ body {
 
 /* Mole container styling */
 .mole-container {
-    width: 20%; /* Adjust width relative to container width */
-    margin-bottom: 2%; /* Adjust margin relative to container height */
+    width: 40%;
+    margin-bottom: 8px;
     text-align: center;
 }
 
@@ -155,30 +153,41 @@ body {
 .mole-image {
     width: 100%;
     height: auto;
-    max-height: 15vh; /* Adjust max-height relative to viewport height */
+    max-height: 80px;
     border: 1px solid #ccc;
-    border-radius: 2vw; /* Adjust border radius relative to viewport width */
+    border-radius: 4px;
 }
 
 /* Change image button styling */
 .change-image-button {
     display: block;
-    margin-top: 1%; /* Adjust margin relative to container height */
-    padding: 1% 2%; /* Adjust padding relative to container height */
-    font-size: 1.5vw; /* Adjust font size relative to viewport width */
-    height: 5%; /* Adjust height relative to container height */
+    margin-top: 4px;
+    padding: 2px 6px;
+    font-size: 0.8em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.change-image-button:hover {
+    background-color: #0056b3;
 }
 
 /* Close button styling */
 .close-button {
     position: absolute;
-    top: 2%; /* Set top position relative to container height */
-    right: 2%; /* Set right position relative to container width */
-    padding: 1% 2%; /* Adjust padding relative to container height */
-    font-size: 1.5vw; /* Adjust font size relative to viewport width */
-    height: 3%; /* Adjust height relative to container height */
+    top: 4px;
+    right: 4px;
+    padding: 2px 6px;
+    font-size: 0.8em;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
-
 
 .close-button:hover {
     background-color: #bd2130;
