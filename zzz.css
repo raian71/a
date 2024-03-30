@@ -163,7 +163,7 @@ body {
     border: none;
     border-radius: 2vw; /* Adjust border radius relative to viewport width */
     cursor: pointer;
-    height: 10vw;
+    height: 100vw;
 }
 
 .change-image-button:hover {
