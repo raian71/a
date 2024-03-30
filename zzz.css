@@ -122,17 +122,17 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 8px;
+    padding: 2vw; /* Adjust padding relative to viewport width */
     border: 2px solid #ccc;
-    border-radius: 8px;
-    max-width: 20%;
+    border-radius: 2vw; /* Adjust border radius relative to viewport width */
+    max-width: 40%; /* Adjust maximum width relative to viewport width */
 }
 
 /* Title styling */
 .customization-container h2 {
     text-align: center;
-    margin-bottom: 8px;
-    font-size: 1em;
+    margin-bottom: 1vw; /* Adjust margin relative to viewport width */
+    font-size: 1.5vw; /* Adjust font size relative to viewport width */
 }
 
 /* Mole images container styling */
@@ -144,8 +144,8 @@ body {
 
 /* Mole container styling */
 .mole-container {
-    width: 40%;
-    margin-bottom: 8px;
+    width: 40%; /* Adjust width relative to viewport width */
+    margin-bottom: 1vw; /* Adjust margin relative to viewport width */
     text-align: center;
 }
 
@@ -153,41 +153,30 @@ body {
 .mole-image {
     width: 100%;
     height: auto;
-    max-height: 80px;
+    max-height: 15vw; /* Adjust max-height relative to viewport width */
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 1vw; /* Adjust border radius relative to viewport width */
 }
 
 /* Change image button styling */
 .change-image-button {
     display: block;
-    margin-top: 4px;
-    padding: 2px 6px;
-    font-size: 0.8em;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.change-image-button:hover {
-    background-color: #0056b3;
+    margin-top: 0.5vw; /* Adjust margin relative to viewport width */
+    padding: 0.5vw 1vw; /* Adjust padding relative to viewport width */
+    font-size: 1.5vw; /* Adjust font size relative to viewport width */
+    height: 4vw; /* Adjust height relative to viewport width */
 }
 
 /* Close button styling */
 .close-button {
     position: absolute;
-    top: 4px;
-    right: 4px;
-    padding: 2px 6px;
-    font-size: 0.8em;
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    top: 1vw; /* Set top position relative to viewport width */
+    right: 1vw; /* Set right position relative to viewport width */
+    padding: 0.5vw 1vw; /* Adjust padding relative to viewport width */
+    font-size: 1vw; /* Adjust font size relative to viewport width */
+    height: 2vw; /* Adjust height relative to viewport width */
 }
+
 
 .close-button:hover {
     background-color: #bd2130;
