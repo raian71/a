@@ -6,7 +6,7 @@
 
 /* Set height of HTML and body to 100% */
 html, body {
-    height: 50%;
+    height: 100%;
 }
 
 /* Set font family and background color */
@@ -29,7 +29,7 @@ body {
 
 /* Board styling */
 .board {
-    height: 460px;
+    height: 400px;
     width: 600px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
