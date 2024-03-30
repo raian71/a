@@ -156,14 +156,14 @@ body {
 .change-image-button {
     display: block;
     margin-top: 0.5vw; /* Adjust margin relative to viewport width */
-    padding: 3vw 1.5vw; /* Adjust padding relative to viewport width */
+    padding: 1vw 1.5vw; /* Adjust padding relative to viewport width */
     font-size: 2vw; /* Adjust font size relative to viewport width */
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 2vw; /* Adjust border radius relative to viewport width */
     cursor: pointer;
-    height: 10vw;
+    height: 6vw;
 }
 
 .change-image-button:hover {
@@ -174,14 +174,14 @@ body {
     position: absolute;
     top: 1vw; /* Set top position relative to viewport width */
     right: 1vw; /* Set right position relative to viewport width */
-    padding: 2vw 1.5vw; /* Adjust padding relative to viewport width */
+    padding: 1vw 1.5vw; /* Adjust padding relative to viewport width */
     font-size: 2vw; /* Adjust font size relative to viewport width */
     background-color: #dc3545;
     color: white;
     border: none;
     border-radius: 2vw; /* Adjust border radius relative to viewport width */
     cursor: pointer;
-    height: 6vw;
+    height: 3vw;
 }
 
 .close-button:hover {
