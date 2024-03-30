@@ -126,7 +126,7 @@ body {
     border: 2px solid #ccc;
     border-radius: 2vw; /* Adjust border radius relative to viewport width */
     max-width: 50%; /* Adjust maximum width relative to viewport width */
-    height: 40vh; /* Set height relative to viewport height */
+    height: 100vh; /* Set height relative to viewport height */
     overflow: auto; /* Enable scrolling if contents exceed the height */
 }
 
