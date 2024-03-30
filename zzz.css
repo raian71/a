@@ -83,7 +83,7 @@ body {
 /* Timer styling */
 .timer {
     position: absolute;
-    top: 2vw; /* Set top position relative to viewport width */
+    top: 60vw; /* Set top position relative to viewport width */
     right: 2vw; /* Set right position relative to viewport width */
     font-size: 5vw; /* Adjust font size relative to viewport width */
 }
