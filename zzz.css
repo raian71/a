@@ -113,7 +113,7 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
-    height: 120vw; /* Set height relative to viewport width */
+    height: 130vw; /* Set height relative to viewport width */
     width: 80vw; /* Set width relative to viewport width */
     transform: translate(-50%, -50%);
     background-color: white;
@@ -163,6 +163,7 @@ body {
     border: none;
     border-radius: 2vw; /* Adjust border radius relative to viewport width */
     cursor: pointer;
+    height: 2vw;
 }
 
 .change-image-button:hover {
@@ -180,6 +181,7 @@ body {
     border: none;
     border-radius: 2vw; /* Adjust border radius relative to viewport width */
     cursor: pointer;
+    height: 2vw;
 }
 
 .close-button:hover {
