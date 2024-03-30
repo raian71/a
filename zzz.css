@@ -126,7 +126,7 @@ body {
     border: 2px solid #ccc;
     border-radius: 2vw; /* Adjust border radius relative to viewport width */
     max-width: 30%; /* Adjust maximum width relative to viewport width */
-    height: 80vh; /* Set height relative to viewport height */
+    height: 70vh; /* Set height relative to viewport height */
     overflow: auto; /* Enable scrolling if contents exceed the height */
 }
 
@@ -146,7 +146,7 @@ body {
 
 /* Mole container styling */
 .mole-container {
-    width: 40%; /* Adjust width relative to container width */
+    width: 20%; /* Adjust width relative to container width */
     margin-bottom: 2%; /* Adjust margin relative to container height */
     text-align: center;
 }
