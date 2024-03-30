@@ -20,7 +20,7 @@ body {
 
 /* Score styling */
 .score {
-    font-size: 4vw; /* Adjust font size relative to viewport width */
+    font-size: 8vw; /* Adjust font size relative to viewport width */
     margin-bottom: 2vw; /* Adjust margin relative to viewport width */
 }
 
@@ -85,7 +85,7 @@ body {
     position: absolute;
     top: 2vw; /* Set top position relative to viewport width */
     right: 2vw; /* Set right position relative to viewport width */
-    font-size: 2vw; /* Adjust font size relative to viewport width */
+    font-size: 5vw; /* Adjust font size relative to viewport width */
 }
 
 /* Start button styling */
