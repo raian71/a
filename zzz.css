@@ -8,7 +8,7 @@
 /* Set font family and background color */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('hd.jpg');
+    background-image: url('a.jpg');
     color: #fff;
     display: flex;
     flex-direction: column;
