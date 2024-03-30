@@ -9,7 +9,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: url('a.jpg');
-    color: #fff;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,7 +96,7 @@ body {
     transform: translateY(-50%);
     width: 30vw; /* Set width relative to viewport width */
     height: 12vw; /* Set height relative to viewport width */
-    font-size: 2vw; /* Adjust font size relative to viewport width */
+    font-size: 5vw; /* Adjust font size relative to viewport width */
 }
 .start-button {
     position: absolute;
@@ -105,7 +105,7 @@ body {
     transform: translateX(-50%);
     width: 30vw; /* Set width relative to viewport width */
     height: 12vw; /* Set height relative to viewport width */
-    font-size: 2vw; /* Adjust font size relative to viewport width */
+    font-size: 5vw; /* Adjust font size relative to viewport width */
 }
 
 /* Customization container styling */
@@ -113,7 +113,7 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
-    height: 130vw; /* Set height relative to viewport width */
+    height: 140vw; /* Set height relative to viewport width */
     width: 80vw; /* Set width relative to viewport width */
     transform: translate(-50%, -50%);
     background-color: white;
@@ -175,7 +175,7 @@ body {
     top: 1vw; /* Set top position relative to viewport width */
     right: 1vw; /* Set right position relative to viewport width */
     padding: 1vw 1.5vw; /* Adjust padding relative to viewport width */
-    font-size: 2vw; /* Adjust font size relative to viewport width */
+    font-size: 1.5vw; /* Adjust font size relative to viewport width */
     background-color: #dc3545;
     color: white;
     border: none;
