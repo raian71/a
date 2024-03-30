@@ -126,13 +126,15 @@ body {
     border: 2px solid #ccc;
     border-radius: 2vw; /* Adjust border radius relative to viewport width */
     max-width: 40%; /* Adjust maximum width relative to viewport width */
+    height: 50vh; /* Set height relative to viewport height */
+    overflow: auto; /* Enable scrolling if contents exceed the height */
 }
 
 /* Title styling */
 .customization-container h2 {
     text-align: center;
-    margin-bottom: 1vw; /* Adjust margin relative to viewport width */
-    font-size: 1.5vw; /* Adjust font size relative to viewport width */
+    margin-bottom: 2%; /* Adjust margin relative to container height */
+    font-size: 2vw; /* Adjust font size relative to viewport width */
 }
 
 /* Mole images container styling */
@@ -144,8 +146,8 @@ body {
 
 /* Mole container styling */
 .mole-container {
-    width: 40%; /* Adjust width relative to viewport width */
-    margin-bottom: 1vw; /* Adjust margin relative to viewport width */
+    width: 40%; /* Adjust width relative to container width */
+    margin-bottom: 2%; /* Adjust margin relative to container height */
     text-align: center;
 }
 
@@ -153,28 +155,28 @@ body {
 .mole-image {
     width: 100%;
     height: auto;
-    max-height: 15vw; /* Adjust max-height relative to viewport width */
+    max-height: 15vh; /* Adjust max-height relative to viewport height */
     border: 1px solid #ccc;
-    border-radius: 1vw; /* Adjust border radius relative to viewport width */
+    border-radius: 2vw; /* Adjust border radius relative to viewport width */
 }
 
 /* Change image button styling */
 .change-image-button {
     display: block;
-    margin-top: 0.5vw; /* Adjust margin relative to viewport width */
-    padding: 0.5vw 1vw; /* Adjust padding relative to viewport width */
+    margin-top: 1%; /* Adjust margin relative to container height */
+    padding: 1% 2%; /* Adjust padding relative to container height */
     font-size: 1.5vw; /* Adjust font size relative to viewport width */
-    height: 4vw; /* Adjust height relative to viewport width */
+    height: 5%; /* Adjust height relative to container height */
 }
 
 /* Close button styling */
 .close-button {
     position: absolute;
-    top: 1vw; /* Set top position relative to viewport width */
-    right: 1vw; /* Set right position relative to viewport width */
-    padding: 0.5vw 1vw; /* Adjust padding relative to viewport width */
-    font-size: 1vw; /* Adjust font size relative to viewport width */
-    height: 2vw; /* Adjust height relative to viewport width */
+    top: 2%; /* Set top position relative to container height */
+    right: 2%; /* Set right position relative to container width */
+    padding: 1% 2%; /* Adjust padding relative to container height */
+    font-size: 1.5vw; /* Adjust font size relative to viewport width */
+    height: 3%; /* Adjust height relative to container height */
 }
 
 
